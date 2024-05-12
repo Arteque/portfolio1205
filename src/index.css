@@ -1,0 +1,43 @@
+*, *::after, *::before{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+:root {
+  --bg: hsl(0, 0%, 14%);
+  --bg-1: hsl(0, 0%, 25%);
+  --bg-2: hsl(0, 0%, 35%);
+  --text:hsl(0, 0%, 90%);
+  --text-1:hsl(0, 0%, 80%);
+  --text-2:hsl(0, 0%, 70%);
+  --call:hsl(138, 90%, 45%);
+  --call-1:hsl(138, 90%, 55%);
+  --call-2:hsl(138, 90%, 65%);
+  --text-font:"Play", sans-serif;
+  --heading-font: "Jaro", sans-serif;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root{
+  --text: hsl(0, 0%, 14%);
+  --text-1: hsl(0, 0%, 25%);
+  --text-2: hsl(0, 0%, 35%);
+  --bg:hsl(0, 0%, 90%);
+  --bg-1:hsl(0, 0%, 80%);
+  --bg-2:hsl(0, 0%, 70%);
+  --call:hsl(138, 90%, 45%);
+  --call-1:hsl(138, 90%, 55%);
+  --call-2:hsl(138, 90%, 65%);
+  }
+}
+
+html, body{
+  font-family: var(--text-font);
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--heading-font);
+}
