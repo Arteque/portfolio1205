@@ -3,6 +3,7 @@
   padding:0;
   box-sizing:border-box;
 }
+
 :root {
   --bg: hsl(0, 0%, 14%);
   --bg-1: hsl(0, 0%, 25%);
@@ -30,14 +31,142 @@
   --call-1:hsl(138, 90%, 55%);
   --call-2:hsl(138, 90%, 65%);
   }
+  .logo-container img{
+    filter: brightness(100);
+  }
 }
 
 html, body{
   font-family: var(--text-font);
   background-color: var(--bg);
   color: var(--text);
+  min-height: 80svh;
 }
+
+body.clr-light{
+  --text: hsl(0, 0%, 14%);
+  --text-1: hsl(0, 0%, 25%);
+  --text-2: hsl(0, 0%, 35%);
+  --bg:hsl(0, 0%, 90%);
+  --bg-1:hsl(0, 0%, 80%);
+  --bg-2:hsl(0, 0%, 70%);
+  --call:hsl(138, 90%, 45%);
+  --call-1:hsl(138, 90%, 55%);
+  --call-2:hsl(138, 90%, 65%);
+}
+
+body.clr-light .logo-container img{
+  filter: brightness(100);
+}
+
+body.clr-dark{
+  --bg: hsl(0, 0%, 14%);
+  --bg-1: hsl(0, 0%, 25%);
+  --bg-2: hsl(0, 0%, 35%);
+  --text:hsl(0, 0%, 90%);
+  --text-1:hsl(0, 0%, 80%);
+  --text-2:hsl(0, 0%, 70%);
+  --call:hsl(138, 90%, 45%);
+  --call-1:hsl(138, 90%, 55%);
+  --call-2:hsl(138, 90%, 65%);
+  --text-font:"Play", sans-serif;
+  --heading-font: "Jaro", sans-serif;
+}
+
+body.clr-dark  .logo-container img{
+  filter: unset;
+}
+
 
 h1,h2,h3,h4,h5,h6{
   font-family: var(--heading-font);
+}
+
+a{
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+
+ul[class]{
+  list-style: none;
+}
+img,svg{
+  display:block;
+  width: 100%;
+}
+.wrapper{
+  width: 100%;
+  padding-inline: 1rem;
+}
+
+.extern-links{
+  display: flex;
+  justify-content: flex-end;
+}
+.extern-links svg{
+    fill:var(--text);
+}
+
+.burger-menu{
+  display:flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: space-between;
+  height: 25px;
+  width: 30px;
+  background-color: transparent;
+  border: transparent;
+}
+.burger-menu span{
+  position:relative;
+  height: calc(100% / 5);
+  display:block;
+  background-color: var(--bg);
+  transition: all 0.3s;
+}
+body.open .burger-menu span:nth-child(2){
+  opacity: 0;
+}
+body.open .burger-menu span:nth-child(1){
+  top:50%;
+  rotate:45deg;
+}
+body.open .burger-menu span:nth-child(3){
+  bottom:25%;
+  rotate:-45deg;
+}
+
+header#main-header .wrapper{
+  padding-inline: 0;
+}
+header#main-header .logo-container a{
+  display: block;
+  max-width: 20px;
+}
+header#main-header .wrapper nav{
+  position: relative;
+  background-color:var(--text);
+  display:flex;
+  justify-content: space-around;
+  padding: 10px 0rem;
+
+}
+header#main-header nav ul.nav-items{
+  position:absolute;
+  width: 70%;
+  max-width: 200px;
+  right: 0;
+  top: 120%;
+  border-radius:10px;
+  box-shadow: 5px 5px 20px var(--bg);
+  background-color: var(--text);
+  padding-block-start: 2rem;
+}
+header#main-header nav ul.nav-items a{
+  display: block;
+  color: var(--bg);
+  padding-block: 0.5rem;
+  margin-block:0.2rem;
+  text-align: center;
 }
