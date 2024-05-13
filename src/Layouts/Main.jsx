@@ -64,13 +64,13 @@ function Main() {
                     {
                         socialData.map(item => (
                             <li key={item.id}>
-                                    <Link to={item.url} title={item.title} dataName={item.name} target="_blank" role="button" rel="noopener noreferrer">
-                                        <FontAwesomeIcon icon={item.icon} />
-                                    </Link>
-                                </li>
-                            ))
-                        }
-                    </ul>
+                                <Link to={item.url} title={item.title} dataName={item.name} target="_blank" role="button" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={item.icon} />
+                                </Link>
+                            </li>
+                        ))
+                    }
+                </ul>
                 )
             }
             </div>

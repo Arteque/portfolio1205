@@ -1,5 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import './App.scss'
+
+
 import { 
   createBrowserRouter,
   createRoutesFromElements,
@@ -10,7 +13,6 @@ import {
 import Main from './Layouts/Main'
 import Index from './Pages/Index'
 import Error from './Pages/Error'
-import './index.css'
 
 
 const router = createBrowserRouter(
