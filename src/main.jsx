@@ -22,7 +22,7 @@ const router = createBrowserRouter(
     errorElement={<Error />}
     >
       <Route index element={<Index />} />
-
+      <Route path='/about' element={<About />} />
     </Route>
   )
 )

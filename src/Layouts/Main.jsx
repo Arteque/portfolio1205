@@ -56,8 +56,8 @@ function Main() {
   return (
     <>
     <header id="main-header">
-        <div className="top-header">
-            <div className="wrapper">
+        <div className="wrapper">
+            <div className="top-header">
             {
             socialData && (
                 <ul className="extern-links">
@@ -74,8 +74,6 @@ function Main() {
                 )
             }
             </div>
-        </div>
-        <div className="wrapper">
         <nav>
             
             <div className="logo-container">
@@ -108,7 +106,33 @@ function Main() {
     <main>
         <Outlet />
     </main>
-    <footer>Footer</footer>
+    <footer>
+        <div className="footer-top">
+            <h2>Ahmed Lemssiah</h2>
+            <ul className="footer-nav-items">
+                <li>
+                    <NavLink to="/">
+                        Home
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/uebermich">Wer bin ich?</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/portfolio">Portfolio</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/kontakt">Kontakt</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/kontakt">Impressum</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/kontakt">Datenschutz</NavLink>
+                </li>
+            </ul>
+        </div>
+    </footer>
     </>
   )
 }
