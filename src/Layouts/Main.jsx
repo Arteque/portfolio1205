@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import MainLogo from "../assets/MainLogo.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,6 +12,12 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import Burger from "../Components/Shared/Burger";
 function Main() {
+
+      const {pathname} = useLocation();
+    
+      useEffect(() => {
+         document.body.classList.remove("open")
+      }, [ pathname ]);
 
 
     const socialData = [
@@ -44,7 +52,7 @@ function Main() {
             title: "Finden Sie mich auf Youtube"
         },
         {
-            id:4,
+            id:5,
             name: "Twitter X",
             url:"https://twitter.com/LemssiahCode",
             icon:faXTwitter,
@@ -64,7 +72,7 @@ function Main() {
                     {
                         socialData.map(item => (
                             <li key={item.id}>
-                                <Link to={item.url} title={item.title} dataName={item.name} target="_blank" role="button" rel="noopener noreferrer">
+                                <Link to={item.url} title={item.title} dataname={item.name} target="_blank" role="button" rel="noopener noreferrer">
                                     <FontAwesomeIcon icon={item.icon} />
                                 </Link>
                             </li>
@@ -85,20 +93,10 @@ function Main() {
             <Burger />
             
             <ul className="nav-items">
-                <li>
-                    <NavLink to="/">
-                        Home
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/uebermich">Wer bin ich?</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/portfolio">Portfolio</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/kontakt">Kontakt</NavLink>
-                </li>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/uebermich">Wer bin ich?</NavLink></li>
+                <li><NavLink to="/portfolio">Portfolio</NavLink></li>
+                <li><NavLink to="/kontakt">Kontakt</NavLink></li>
             </ul>
         </nav>
         </div>

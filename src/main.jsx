@@ -12,7 +12,11 @@ import {
 
 import Main from './Layouts/Main'
 import Index from './Pages/Index'
+import About from './Pages/About'
+
+//Error
 import Error from './Pages/Error'
+
 
 
 const router = createBrowserRouter(
@@ -22,7 +26,9 @@ const router = createBrowserRouter(
     errorElement={<Error />}
     >
       <Route index element={<Index />} />
-      <Route path='/about' element={<About />} />
+      <Route path='/uebermich' element={<About />} />
+      <Route path='/portfolio' element={<About />} />
+      <Route path='/kontakt' element={<About />} />
     </Route>
   )
 )

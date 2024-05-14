@@ -14,9 +14,7 @@ function index() {
                 Frontend<em>Web</em>Entwickler
               </span>
             </h2>
-            <p>
-              "Ich manipuliere Pixel, um Visionen zum Leben zu erwecken"
-            </p>
+            <p> Ich manipuliere Pixel, um Visionen zum Leben zu erwecken </p>
             <div className="call">
               <Link to="/portfolio">
                 Portfolio
@@ -24,7 +22,7 @@ function index() {
             </div>
           </div>
           <div className="media">
-            <img src="/General/SVG/AvatarMain.svg" alt="Frontend Web Entwickler Ahmed Lemssiah Avatar" />
+            <img src="/Avatars/AvatarMain.svg" alt="Frontend Web Entwickler Ahmed Lemssiah Avatar" />
           </div>
         </div>
       </section>
