@@ -349,15 +349,27 @@ $clrsLight:(
     }
     .media{
       width: 80%;
+      max-width:400px;
       margin-inline: auto;
     }
   }
 
 @include tablet{
+  body::before, body.open::before{
+    display: none;
+  }
   header{
     &#main-header{
       .wrapper{
         padding-inline:2rem;
+        .top-header{
+          padding-inline:unset;
+          .extern-links{
+            a{
+              padding: 1rem 0 1rem 1rem;
+            }
+          }
+        }
         nav{
           border-radius: 1rem;
           box-shadow: var(--shadow);
@@ -404,6 +416,24 @@ $clrsLight:(
             }
            }
         }
+      }
+    }
+  }
+
+  //Hero Section
+  #hero{
+    .content{
+      h2{
+        font-size: 1.5rem;
+        .main{
+          font-size: 2.5rem;
+          em{
+            font-size: 3.5rem;
+          }
+        }
+      }
+      p{
+        margin-block: 2rem;
       }
     }
   }
