@@ -1,4 +1,5 @@
 @import "/Fonts/switzer-webfont/style.css";
+//Colors
 $clrs:(
   text:(
    100:hsl(0, 0%, 91%),
@@ -34,6 +35,24 @@ $clrsLight:(
     300:hsl(138, 90%, 65%)
   )
 );
+//Mixin
+@mixin tablet{
+  @media screen and (min-width:700px){@content;}
+};
+
+@mixin desktop{
+  @media screen and (min-width:970px){@content;}
+};
+
+@mixin bigscreen{
+  @media screen and (min-width:1400px){@content;}
+};
+
+@mixin extralarge{
+  @media screen and (min-width:1980px){@content;}
+};
+
+
 
 *, *::after, *::before{
     margin:0;
@@ -51,6 +70,7 @@ $clrsLight:(
     --text-font:"Switzer", sans-serif;
     --heading-font: "Switzer", sans-serif;
     --p:2rem;
+    --shadow:2px 2px 2px  #00000040;
   }
   
   
@@ -198,7 +218,7 @@ $clrsLight:(
     right: var(--p);
     top: 250%;
     border-radius:10px;
-    box-shadow: 5px 5px 10px #00000080;
+    box-shadow: var(--shadow);
     background-color: var(--clr-text-100);
     padding-block: 2rem;
     transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -317,7 +337,7 @@ $clrsLight:(
           font-style: normal;
           display: inline-block;
           color: var(--clr-call-100);
-          text-shadow:2px 2px 2px  #00000040;
+          text-shadow:var(--shadow);
           rotate:15deg;
           margin-inline: 10px;
         }
@@ -333,4 +353,58 @@ $clrsLight:(
     }
   }
 
-  
+@include tablet{
+  header{
+    &#main-header{
+      .wrapper{
+        padding-inline:2rem;
+        nav{
+          border-radius: 1rem;
+          box-shadow: var(--shadow);
+          padding:unset;
+          .logo-container{
+            padding: 1rem;
+          }
+          .burger-menu{
+            display: none;
+            pointer-events: none;
+          }
+          .nav-items{
+            position:unset;
+            display: flex;
+            gap: 1rem;
+            width: unset;
+            max-width: unset;
+            top: unset;
+            right:unset;
+            border-radius: unset;
+            box-shadow: unset;
+            padding-inline: 0;
+            transition: unset;
+            background-color: transparent;
+            padding-block:unset;
+            opacity: 1;
+            pointer-events: auto;
+            a{
+              font-size: 1rem;
+              font-weight: normal;
+              margin-block: unset;
+              padding-block: .5rem;
+              padding-inline-end: 1rem;
+              text-align: unset;
+              &:hover{
+                background-color: var(--clr-text-200);
+              }
+              &.active::after{
+                left:0;
+                transform:unset;
+                width: 100%;
+                bottom: -5px;
+              }
+            }
+           }
+        }
+      }
+    }
+  }
+}
