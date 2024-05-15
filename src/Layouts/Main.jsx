@@ -11,6 +11,7 @@ import {
     faXTwitter
 } from '@fortawesome/free-brands-svg-icons';
 import Burger from "../Components/Shared/Burger";
+import ColorMode from "../Components/ColorMode";
 function Main() {
 
       const {pathname} = useLocation();
@@ -26,14 +27,16 @@ function Main() {
             name: "Github",
             url:"https://github.com/Arteque",
             icon:faGithub,
-            title: "Meine Github Repos"
+            title: "Meine Github Repos",
+            color:"#171515"
         },
         {
             id:2,
             name: "Reddit",
             url:"https://www.reddit.com/user/LemssiahCode/",
             icon:faRedditAlien,
-            title: "Reddit"
+            title: "Reddit",
+            color: "#FF4500"
         },
         
         {
@@ -41,7 +44,8 @@ function Main() {
             name: "Instagram",
             url:"https://www.instagram.com/ah.lemssiah/",
             icon:faSquareInstagram,
-            title: "Finden Sie mich auf Instagram"
+            title: "Finden Sie mich auf Instagram",
+            color:"linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)"
         },
 
         {
@@ -49,31 +53,35 @@ function Main() {
             name: "Youtube",
             url:"https://www.youtube.com/channel/UCJbe56vnh9gc1qBZSql9lqQ",
             icon:faYoutube,
-            title: "Finden Sie mich auf Youtube"
+            title: "Finden Sie mich auf Youtube",
+            color:"#FF0000"
         },
         {
             id:5,
             name: "Twitter X",
             url:"https://twitter.com/LemssiahCode",
             icon:faXTwitter,
-            title: "Finden Sie mich auf Twitter X"
+            title: "Finden Sie mich auf Twitter X",
+            color: "#000000"
         },
 
     ]
+
 
   return (
     <>
     <header id="main-header">
         <div className="wrapper">
             <div className="top-header">
+            <ColorMode />
             {
             socialData && (
                 <ul className="extern-links">
                     {
                         socialData.map(item => (
-                            <li key={item.id}>
+                            <li key={item.id} >
                                 <Link to={item.url} title={item.title} dataname={item.name} target="_blank" role="button" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={item.icon} />
+                                    <FontAwesomeIcon icon={item.icon} datacolor={item.color}/>
                                 </Link>
                             </li>
                         ))

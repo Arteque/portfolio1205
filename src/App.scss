@@ -141,6 +141,8 @@ $clrsLight:(
   }
   .wrapper{
     padding-inline: var(--p);
+    max-width:1350px;
+    margin-inline:auto;
   }
   .burger-menu{
     display:flex;
@@ -179,15 +181,26 @@ $clrsLight:(
       padding-inline: 0;
       .top-header{
         padding-inline:var(--p);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-block: 0.5rem;
         .extern-links{
             display: flex;
             justify-content: flex-end;
-            gap: 0.5rem;
+            gap: 1rem;
             a{
                 padding:5px 2px;
                 display:block;
+                transition: all 0.3s;
+                border-radius: 5px;
                 svg{
                     height: 1.35rem;
+                }
+                &:hover{
+                  box-shadow: 2px 2px 20px #00000020;
+                  color: var(--clr-bg-100);
+                  background:attr(data-color); 
                 }
             }
           }
@@ -366,7 +379,7 @@ $clrsLight:(
           padding-inline:unset;
           .extern-links{
             a{
-              padding: 1rem 0 1rem 1rem;
+              padding: 1rem;
             }
           }
         }
