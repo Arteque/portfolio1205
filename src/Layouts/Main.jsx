@@ -14,6 +14,19 @@ import Burger from "../Components/Shared/Burger";
 import ColorMode from "../Components/ColorMode";
 function Main() {
 
+
+    useEffect(() => {
+        const socialLinks = document.querySelectorAll(".social-link")
+        socialLinks.forEach(item => {
+            item.addEventListener("mouseenter", () => {
+                item.style.cssText = "background:" + item.dataset.color
+            })
+            item.addEventListener("mouseleave", () => {
+                item.style.cssText = "background:transparent"
+            })
+        })  
+    },[])
+
       const {pathname} = useLocation();
     
       useEffect(() => {
@@ -67,7 +80,7 @@ function Main() {
 
     ]
 
-
+  
   return (
     <>
     <header id="main-header">
@@ -79,9 +92,11 @@ function Main() {
                 <ul className="extern-links">
                     {
                         socialData.map(item => (
-                            <li key={item.id} >
+                            <li key={item.id} 
+                            className="social-link" data-color={item.color}
+                            >
                                 <Link to={item.url} title={item.title} dataname={item.name} target="_blank" role="button" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={item.icon} datacolor={item.color}/>
+                                    <FontAwesomeIcon icon={item.icon}/>
                                 </Link>
                             </li>
                         ))
