@@ -25,7 +25,7 @@ function ColorMode() {
       setLocalStorageColorMode(item.firstElementChild.innerText.toLowerCase())
 
       setOpenMenu(false)
-
+      
       setModeText({text:item.firstElementChild.innerText})
     })
   })

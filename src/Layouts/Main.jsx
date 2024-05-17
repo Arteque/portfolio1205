@@ -15,11 +15,13 @@ import ColorMode from "../Components/ColorMode";
 function Main() {
 
 
-    const getLocalStorageColorMode =  () => {
-        if(!localStorage.getItem("colormode")) return
-          return localStorage.getItem("colormode")
-       }
-
+    const getLocalStorageColorMode = () => {
+        if (!localStorage.getItem("colormode")) {
+            const systemColorMode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            localStorage.setItem("colormode", systemColorMode);
+        }
+        return localStorage.getItem("colormode");
+    }
 
     useEffect(() => {
         //ColorMode
