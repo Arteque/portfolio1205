@@ -17,10 +17,10 @@ function Main() {
 
     const getLocalStorageColorMode = () => {
         if (!localStorage.getItem("colormode")) {
-            const systemColorMode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-            localStorage.setItem("colormode", systemColorMode);
+           return "System"
+        }else{
+            return localStorage.getItem("colormode");
         }
-        return localStorage.getItem("colormode");
     }
 
     useEffect(() => {

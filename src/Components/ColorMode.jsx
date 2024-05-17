@@ -13,9 +13,20 @@ function ColorMode() {
   const setLocalStorageColorMode = (item) => {
     localStorage.setItem("colormode", item)
   }
+
+
+  const getLocalStorageColorMode = () => {
+    if (!localStorage.getItem("colormode")) {
+       return "System"
+    }else{
+        return localStorage.getItem("colormode");
+    }
+}
+
  useEffect(() => {
+  setModeText({text:getLocalStorageColorMode()})
   const dropDownItems = document.querySelectorAll(".colorMode-dropdown li")
-  dropDownItems.forEach(item => {
+  dropDownItems.forEach((item,i) => {
     item.addEventListener("click", (e) => {
       item.parentElement.querySelector(".active").classList.remove("active")
       item.classList.add("active")
@@ -25,8 +36,12 @@ function ColorMode() {
       setLocalStorageColorMode(item.firstElementChild.innerText.toLowerCase())
 
       setOpenMenu(false)
-      
+
       setModeText({text:item.firstElementChild.innerText})
+
+      if(i == 2){
+        localStorage.removeItem("colormode")
+      }
     })
   })
  },[])
