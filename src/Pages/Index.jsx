@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 function index() {
+  
   return (
     <>
       <section id="hero">
