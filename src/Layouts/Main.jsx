@@ -18,7 +18,7 @@ function Main() {
     useEffect(() => {
         
 
-
+        //SocialLinks Header
         const socialLinks = document.querySelectorAll(".social-link")
         socialLinks.forEach(item => {
             item.addEventListener("mouseenter", () => {
@@ -27,7 +27,19 @@ function Main() {
             item.addEventListener("mouseleave", () => {
                 item.style.cssText = "background:transparent"
             })
-        })  
+        }) 
+        
+        
+        //ScrollLogo
+        document.addEventListener("scroll", (e) => {
+            const documentHeight = e.target.scrollingElement.clientHeight
+            if(window.scrollY >= 200){
+                document.body.classList.add("scrolled")
+            }else{
+                document.body.classList.remove("scrolled")
+            }
+            
+        })
     },[])
 
       const {pathname} = useLocation();
