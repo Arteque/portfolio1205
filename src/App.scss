@@ -445,7 +445,8 @@ $clrsLight:(
           color: var(--clr-call-100);
           text-shadow:var(--shadow);
           rotate:15deg;
-          margin-inline: 10px;
+          margin-inline: auto;
+          width: fit-content;
 
         }
       }
@@ -545,11 +546,28 @@ $clrsLight:(
           font-size: 2.5rem;
           em{
             font-size: 3.5rem;
+            display:inline-block;
           }
         }
       }
       p{
         margin-block: 2rem;
+      }
+      .call{
+        a{
+          margin-inline:unset;
+          font-size: 2rem;
+            &::after {
+              bottom: -7px;
+              height: 2rem;
+              transition: all 0.3s;
+          }
+          &:hover{
+            &::after{
+              filter:brightness(1.5);
+            }
+          }
+        }
       }
     }
   }
