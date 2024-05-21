@@ -24,6 +24,8 @@ function ColorMode() {
 }
 
  useEffect(() => {
+  //ColorMode
+  document.body.dataset.colormode = getLocalStorageColorMode()
   setModeText({text:getLocalStorageColorMode()})
   const dropDownItems = document.querySelectorAll(".colorMode-dropdown li")
   dropDownItems.forEach((item,i) => {

@@ -15,17 +15,8 @@ import ColorMode from "../Components/ColorMode";
 function Main() {
 
 
-    const getLocalStorageColorMode = () => {
-        if (!localStorage.getItem("colormode")) {
-           return "System"
-        }else{
-            return localStorage.getItem("colormode");
-        }
-    }
-
     useEffect(() => {
-        //ColorMode
-        document.body.dataset.colormode = getLocalStorageColorMode()
+        
 
 
         const socialLinks = document.querySelectorAll(".social-link")
