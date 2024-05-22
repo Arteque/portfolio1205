@@ -27,6 +27,28 @@ function index() {
           </div>
         </div>
       </section>
+      <section id="service">
+        <div className="wrapper">
+          <header className="section-header">
+            <h2>
+              Über <em>mich</em>
+            </h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nam doloremque aliquid eligendi corrupti cumque reiciendis delectus perspiciatis, quis illo?
+            </p>
+          </header>
+          <div className="content">
+            <div className="col">
+              <img src="" alt="" />
+            </div>
+            <div className="col">
+              <h3> 
+                Ideen<em>Erfinder</em>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
