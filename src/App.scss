@@ -468,6 +468,75 @@ $clrsLight:(
     }
   }
 
+.rotate{
+  --timer : 100s;
+  animation: rotateit var(--timer) linear infinite;
+}
+
+.rotate > *{
+  animation: rotateBackwards var(--timer) linear infinite;
+}
+
+@keyframes rotateit {
+  0%{
+    rotate:0
+  }
+  100%{
+    rotate:360deg;
+  }
+}
+@keyframes rotateBackwards {
+  0%{
+    rotate:0;
+  }
+  100%{
+    rotate:-720deg;
+  }
+}
+
+//###################################About
+
+.multi-media-container {
+  max-width: 400px;
+  margin-inline: auto;
+  position: relative;
+  // overflow: hidden;
+  .main-media{
+    padding: 4rem;
+  }
+  .tools-media{
+    position:absolute;
+    inset: 2rem;
+    img{
+      position:absolute;
+      max-width: 100px;
+      max-height: 100px;
+      &.top{
+        top:0;
+      }
+      &.left{
+        left:0;
+      }
+      &.right{
+        right:0;
+      }
+      &.bottom{
+        bottom:0;
+      }
+      &.center{
+        top:50%;
+        bottom:auto;
+        transform:translateY(-50%);
+      }
+    }
+  }
+}
+
+
+
+
+//##############################Media Queries
+
 @include tablet{
   body.open{
     scroll-behavior: smooth;
