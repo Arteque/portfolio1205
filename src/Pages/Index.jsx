@@ -34,7 +34,7 @@ function index() {
               Über <em>mich</em>
             </h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nam doloremque aliquid eligendi corrupti cumque reiciendis delectus perspiciatis, quis illo?
+            Ich bin und liebe es Webentwickler zusein. 
             </p>
           </header>
           <div className="content">

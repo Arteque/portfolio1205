@@ -67,15 +67,15 @@ $clrsLight:(
         --clr-#{$clr}-#{$subClr}: #{$vl};
       }
     }
-    // --text-font:"Switzer", sans-serif;
-    --text-font:"Chivo Mono", monospace;
+    --text-font:"Switzer", sans-serif;
+    // --text-font:"Chivo Mono", monospace;
     // --heading-font: "Switzer", sans-serif;
     --heading-font: "Rubik Mono One", monospace;;
     --p:2rem;
     --shadow:2px 2px 2px  #00000040;
   }
   
-  
+ 
  
   
   .logo-container img{
@@ -89,6 +89,11 @@ $clrsLight:(
     min-height: 80svh;
   }
   
+
+  h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font);
+  }
+
   body[data-colormode="light"]{
     @each $clr, $vls in $clrsLight{
       @each $subClr, $vl in $vls{
@@ -416,6 +421,28 @@ $clrsLight:(
   }
   section{
     margin-block-end: 10rem;
+    header{
+      &.section-header{
+        h2{
+          font-weight: 100;
+          font-size: clamp(32px, 16vw + 1px, 72px);
+          text-align: center;
+          color: var(--clr-text-200);
+          font-family:var(--heading-font);
+          em{
+            font-style: normal;
+            font-weight: 900;
+            color: var(--clr-call-100);
+          }
+        }
+        p{
+          max-width: 500px;
+          margin-inline: auto;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
   }
   #hero{
     background-image:url(/General/Dots.svg);
@@ -497,20 +524,20 @@ $clrsLight:(
 //###################################About
 
 .multi-media-container {
-  max-width: 400px;
   margin-inline: auto;
   position: relative;
-  // overflow: hidden;
+  overflow: hidden;
+  padding: 2rem;
   .main-media{
-    padding: 4rem;
+    padding: 2rem;
   }
   .tools-media{
     position:absolute;
-    inset: 2rem;
+    inset: 3rem;
     img{
       position:absolute;
-      max-width: 100px;
-      max-height: 100px;
+      max-width: 80px;
+      max-height: 80px;
       &.top{
         top:0;
       }
@@ -532,8 +559,33 @@ $clrsLight:(
   }
 }
 
+//########################## Content
 
-
+section{
+  .content{
+    h3{
+      font-size: clamp(24px, 7vw + 1px, 52px);
+      font-weight: 100;
+      em{
+        font-style: normal;
+        color: var(--clr-call-100);
+        font-size: xx-large;
+        font-weight: 900;
+      }
+    }
+    h4{
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding-inline-start: 1rem;
+      margin-block-end: 1rem;
+    }
+    p{
+      font-size: 1rem;
+      letter-spacing: normal;
+      line-height: 2rem;
+    }
+  }
+}
 
 //##############################Media Queries
 
