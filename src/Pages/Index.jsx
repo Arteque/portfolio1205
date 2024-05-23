@@ -59,15 +59,10 @@ function index() {
                 Go Digital or Go Home!
               </h4>
               <p>
-              In einer Zeit, in der alle auf etwa 376px breite Bildschirme starren, ist es entscheidend, sich und/oder sein Unternehmen anzupassen, um dort responsive, interaktiv und animiert präsent zu sein. Die digitale Präsenz ist heute mehr als nur eine Option; sie ist eine Notwendigkeit. Unternehmen, die es versäumen, ihre Online-Präsenz zu optimieren, riskieren, hinter der Konkurrenz zurückzubleiben. Eine responsive Website stellt sicher, dass Inhalte auf allen Geräten – ob Desktop, Tablet oder Smartphone – perfekt angezeigt werden. Dies ist besonders wichtig in einer Ära, in der mobile Geräte einen großen Teil des Internetverkehrs ausmachen.
-
-Jede Firma hat eine eigene Marktpositionierung und spricht ihre Kunden anders an. Eine Website sollte die Unternehmenswerte strahlend online darstellen. Dies bedeutet, dass die Website nicht nur funktional, sondern auch ästhetisch ansprechend sein sollte. Farben, Layout, Schriftarten und Bilder sollten alle sorgfältig ausgewählt werden, um die Markenidentität zu verstärken. Eine gut gestaltete Website kann das Vertrauen der Kunden stärken und die Markenloyalität erhöhen.
-
-Es kann keine Kreativität geben, ohne zu verstehen, was der Kunde erwartet. Die Bedürfnisse und Erwartungen der Zielgruppe zu kennen, ist der Schlüssel zur Schaffung einer effektiven Website. Dies erfordert eine gründliche Markt- und Zielgruppenanalyse. Welche Probleme haben Ihre Kunden? Welche Lösungen suchen sie? Welche Art von Benutzererfahrung schätzen sie? Durch die Beantwortung dieser Fragen kann ich eine Website entwickeln, die nicht nur gut aussieht, sondern auch funktioniert.
-
-Zusätzlich zur Benutzererfahrung spielt die Interaktivität eine wichtige Rolle. Interaktive Elemente wie Animationen, Call-to-Action-Buttons und benutzerfreundliche Navigation können die Benutzerbindung erhöhen. Eine interaktive Website lädt die Besucher ein, mehr Zeit auf ihr zu verbringen, was letztlich zu höheren Konversionsraten führen kann.
-
-Zusammenfassend lässt sich sagen, dass eine moderne, gut gestaltete und funktionsreiche Website unerlässlich ist, um in der heutigen digitalen Welt erfolgreich zu sein. Gehen Sie digital oder gehen Sie nach Hause – die Wahl liegt bei Ihnen, aber die Entscheidung sollte klar sein. Als Frontend-Webentwickler kann ich Ihnen helfen, diese digitale Präsenz zu erreichen und Ihre Online-Ziele zu verwirklichen. Lassen Sie uns gemeinsam Ihre Vision in die Realität umsetzen.
+                Ich arbeite täglich mit einer Vielzahl von Kunden aus ganz Deutschland zusammen. 
+              </p>
+              <p>
+                  <b>Antworten</b>, <b>Erklärungen</b>, <b>Lösungen und kreative Ideen zu entwickeln</b>, ist meine Leidenschaft und gehört zu meinem Alltag. Den perfekten Ansatz zu finden, bedeutet, meine Kunden und ihre Bedürfnisse genau zu verstehen.
               </p>
             </div>
           </div>

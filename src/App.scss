@@ -530,6 +530,9 @@ $clrsLight:(
   padding: 2rem;
   .main-media{
     padding: 2rem;
+    img{
+      animation:shakeit 20s ease-in-out infinite;
+    }
   }
   .tools-media{
     position:absolute;
@@ -559,30 +562,53 @@ $clrsLight:(
   }
 }
 
+
+@keyframes shakeit{
+  0%, 60%, 100%{
+    transform:translateY(0)
+  }
+  20%,80%{
+    transform:translateY(-5px)
+  }
+  40%{
+    transform:translateY(5px)
+  }
+}
 //########################## Content
 
 section{
-  .content{
-    h3{
-      font-size: clamp(24px, 7vw + 1px, 52px);
-      font-weight: 100;
-      em{
-        font-style: normal;
-        color: var(--clr-call-100);
-        font-size: xx-large;
-        font-weight: 900;
+  &:not(#hero){
+    .content{
+      h3{
+        font-size: clamp(24px, 7vw + 1px, 52px);
+        font-weight: 100;
+        text-align:center;
+        margin-block-end: 2rem;
+        em{
+          font-style: normal;
+          color: var(--clr-call-100);
+          font-size: xx-large;
+          font-weight: 900;
+        }
       }
-    }
-    h4{
-      font-size: 1rem;
-      text-transform: uppercase;
-      padding-inline-start: 1rem;
-      margin-block-end: 1rem;
-    }
-    p{
-      font-size: 1rem;
-      letter-spacing: normal;
-      line-height: 2rem;
+      h4{
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin-block-end: 1rem;
+      }
+      p{
+        font-size: 1rem;
+        font-weight: 100;
+        letter-spacing: 1px;
+        line-height: 1.5rem;
+        margin-block: 1rem;
+        &::first-letter{
+          font-weight: 900;
+          background:var(--clr-call-100);
+          color: var(--clr-bg-100);
+  
+        }
+      }
     }
   }
 }
