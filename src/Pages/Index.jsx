@@ -103,7 +103,7 @@ function index() {
             </div>
             <div className="col">
               <h3> 
-                Pixel <em>Künstler</em>
+                Websites <em>Designer</em>
               </h3>
               
               <p>
@@ -130,6 +130,51 @@ function index() {
             </div>
           </div>
 
+          <div className="content">
+            <div className="col">
+              <div className="multi-media-container">
+                <div className="main-media">
+                  <img src="/Avatars/EntwicklerAvatar.svg" alt="Erfinder Avatar" />
+                </div>
+                <div className="bg-media">
+                  <img className="rotate" src="/General/outlineCircle.svg" alt="outlineCircle" />
+                </div>
+                <div className="tools-media rotate">
+                  <img className="right center" src="/Avatars/Designer/brush.svg" alt="Element3" />
+                  <img className="left center" src="/Avatars/Designer/colorBlue_1.svg" alt="Element3" />
+                  <img className="left top" src="/Avatars/Designer/piplette.svg" alt="Element3" />
+                  <img className="right bottom" src="/Avatars/Designer/colorplaett.svg" alt="Element3" />
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <h3> 
+                Website <em>Entwickler</em>
+              </h3>
+              
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi beatae voluptatibus provident sit suscipit commodi quibusdam rem iure veniam. Quos distinctio facilis, amet possimus, dignissimos laudantium nemo dolores autem molestias omnis aspernatur voluptates cumque doloremque mollitia maxime modi commodi minima. Vel, consectetur ipsa praesentium nesciunt deleniti voluptates libero assumenda. Quasi!
+              </p>
+              <h4>Lorem ipsum dolor sit </h4>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consectetur impedit vitae nihil ex voluptas deleniti odit, quasi minus dicta dolorem perferendis excepturi aspernatur officiis nobis rem. Iusto, itaque. Deleniti?
+              </p>
+              <h4>
+                Lorem ipsum dolor sit.
+              </h4>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet.
+                </li>
+                <li>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, eius.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. A minus eveniet repellendus dolores aut culpa magni quia pariatur tempora architecto?
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </>

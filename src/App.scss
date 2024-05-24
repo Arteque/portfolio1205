@@ -1,58 +1,4 @@
-@import "/Fonts/switzer-webfont/style.css";
-//Colors
-$clrs:(
-  text:(
-   100:hsl(0, 0%, 91%),
-   200:hsl(0, 0%, 81%),
-   300:hsl(0, 0%, 71%),
-  ),
-  bg:(
-    100:hsl(216, 72%, 17%),
-    200:hsl(216, 72%, 27%),
-    300:hsl(216, 72%, 37%),
-  ),
-  call:(
-    100:hsl(138, 90%, 45%),
-    200:hsl(138, 90%, 55%),
-    300:hsl(138, 90%, 65%)
-  )
-);
-
-$clrsLight:(
-  text:(
-    100:hsl(216, 72%, 17%),
-    200:hsl(216, 72%, 27%),
-    300:hsl(216, 72%, 37%),
-  ),
-  bg:(
-    100:hsl(0, 0%, 91%),
-    200:hsl(0, 0%, 81%),
-    300:hsl(0, 0%, 71%),
-  ),
-  call:(
-    100:hsl(138, 90%, 45%),
-    200:hsl(138, 90%, 55%),
-    300:hsl(138, 90%, 65%)
-  )
-);
-//Mixin
-@mixin tablet{
-  @media screen and (min-width:700px){@content;}
-};
-
-@mixin desktop{
-  @media screen and (min-width:970px){@content;}
-};
-
-@mixin bigscreen{
-  @media screen and (min-width:1400px){@content;}
-};
-
-@mixin extralarge{
-  @media screen and (min-width:1980px){@content;}
-};
-
-
+@import "./Styles/_Vars";
 
 *, *::after, *::before{
     margin:0;
@@ -526,7 +472,7 @@ $clrsLight:(
 .multi-media-container {
   margin-inline: auto;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   padding: 2rem;
   max-width: 400px;
   .main-media{
