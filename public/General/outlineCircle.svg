@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1868 1868">
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1817 1817">
   <defs>
     <style>
       .cls-1 {
         fill: none;
         stroke: #999;
-        stroke-dasharray: 0 0 202.66 202.66;
+        stroke-dasharray: 0 0 16.03 16.03;
         stroke-miterlimit: 10;
-        stroke-width: 62px;
+        stroke-width: 11px;
       }
     </style>
   </defs>
   <g id="Ebene_1-2" data-name="Ebene 1">
-    <circle class="cls-1" cx="934" cy="934" r="903"/>
+    <circle class="cls-1" cx="908.5" cy="908.5" r="903"/>
   </g>
 </svg>

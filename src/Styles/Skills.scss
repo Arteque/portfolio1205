@@ -4,14 +4,20 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    background: url(/General/onelineWave.svg) no-repeat center / contain;
     li{
         transition: all 0.3s;
         border-radius: 10px;
         box-shadow: 2px 2px 0px transparent;
+        &:nth-of-type(even){
+            position:relative;
+            transform:translateY(-50px);
+        }
         &:hover{
             box-shadow: 2px 2px 20px #00000050;
         }
         a{
+            border-radius:10px;
             width: 80px;
             height: 80px;
             display:flex;

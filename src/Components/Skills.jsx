@@ -52,7 +52,7 @@ function Skills() {
             url:"#typo3",
             icon:faTypo3,
             title:"Typo3",
-            color:"linear-gradient(to right, #ff8700 50%,  #fab85c 60%)"
+            color:"#ff8700"
         },
         {
             id:6,
@@ -70,9 +70,9 @@ function Skills() {
             skillData && (
                 skillData.map(item => (
                     <li key={item.id} 
-                        className="social-link" data-color={item.color}
+                        data-color={item.color}
                         >
-                            <Link to={item.url} title={item.title} dataname={item.name} target="_blank" role="button" rel="noopener noreferrer">
+                            <Link to={item.url} title={item.title} dataname={item.name} target="_blank" role="button" rel="noopener noreferrer" style={{background:item.color}}>
                                 <FontAwesomeIcon icon={item.icon}/>
                             </Link>
                     </li>

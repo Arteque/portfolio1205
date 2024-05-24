@@ -635,7 +635,7 @@ section{
         grid-template-columns: .6fr .4fr;
         gap: 1rem;
         justify-items: center;
-        margin-block-start: 5rem;
+        margin-block-end: 15rem;
         .col{
           align-self:center;
         }
@@ -648,6 +648,27 @@ section{
 }
 
 
+.multi-media-container{
+  position: relative;
+  animation:showImg linear; 
+  animation-timeline:view();
+  animation-range: entry 0% cover 25%;
+  transition: all 1s;
+}
+
+
+@keyframes showImg {
+  0%{
+    opacity: 0;
+    width: 0;
+    transform:translateY(-100px);
+  }
+  100%{
+    opacity: 1;
+    width: 100%;
+    transform:translateY(0px);
+  }
+}
 //##############################Media Queries
 
 @include tablet{
