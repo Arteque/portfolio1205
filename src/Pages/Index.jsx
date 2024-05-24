@@ -154,10 +154,10 @@ function index() {
                   <img className="rotate" src="/General/outlineCircle.svg" alt="outlineCircle" />
                 </div>
                 <div className="tools-media rotate">
-                  <img className="right center" style={{maxWidth:'80px', maxHeight:'200px'}} src="/Avatars/Entwickler/mouse.svg" alt="Element3" />
-                  <img className="left center" style={{maxWidth:'150px', maxHeight:'200px'}} src="/Avatars/Entwickler/keyboard.svg" alt="Element3" />
+                  <img className="right center" style={{maxWidth:'50px', maxHeight:'50px'}} src="/Avatars/Entwickler/mouse.svg" alt="Element3" />
+                  <img className="left center" style={{maxWidth:'100px', maxHeight:'100px'}} src="/Avatars/Entwickler/keyboard.svg" alt="Element3" />
                   <img className="left top" src="/Avatars/Entwickler/calendar.svg" alt="Element3" />
-                  <img className="right bottom" style={{maxWidth:'200px', maxHeight:'200px'}} src="/Avatars/Entwickler/screen.svg" alt="Element3" />
+                  <img className="right bottom" style={{maxWidth:'150px', maxHeight:'150px'}} src="/Avatars/Entwickler/screen.svg" alt="Element3" />
                 </div>
               </div>
             </div>
