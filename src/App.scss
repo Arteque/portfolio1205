@@ -528,6 +528,7 @@ $clrsLight:(
   position: relative;
   overflow: hidden;
   padding: 2rem;
+  max-width: 400px;
   .main-media{
     padding: 2rem;
     img{
@@ -579,39 +580,48 @@ $clrsLight:(
 section{
   &:not(#hero){
     .content{
+      .col{
+        height:fit-content;
+      }
       h3{
-        font-size: clamp(24px, 7vw + 1px, 52px);
+        font-size: 1.4rem;
         font-weight: 100;
         text-align:center;
-        margin-block-end: 2rem;
+        font-family:var(--text-font);
         em{
           font-style: normal;
-          color: var(--clr-call-100);
-          font-size: xx-large;
           font-weight: 900;
         }
       }
       h4{
-        font-size: 1rem;
         text-transform: uppercase;
         margin-block-end: 1rem;
+        color:var(--clr-text-300);
+        text-align:center;
       }
       p{
         font-size: 1rem;
-        font-weight: 400;
         letter-spacing: 1px;
         line-height: 1.5rem;
         margin-block: 1rem;
-        &::first-letter{
-          font-weight: 900;
-          background:var(--clr-call-100);
-          color: var(--clr-bg-100);
-  
+      }
+      @include tablet{
+        display:grid;
+        grid-template-columns: .6fr .4fr;
+        gap: 1rem;
+        justify-items: center;
+        margin-block-start: 5rem;
+        .col{
+          align-self:center;
+        }
+        h3, h4{
+          text-align: unset;
         }
       }
-    }
+    } 
   }
 }
+
 
 //##############################Media Queries
 
@@ -728,6 +738,23 @@ section{
       }
     }
   }
+
+
+  .multi-media-container{
+    overflow: visible;
+    width: 100%;
+    max-width: unset;
+    position:sticky;
+    top: 100px;
+    .tools-media{
+      inset: 2rem;
+      img{
+        max-height: 100px;
+        max-width: 120px;
+      }
+    }
+  }
+
 }
 
 @include desktop{

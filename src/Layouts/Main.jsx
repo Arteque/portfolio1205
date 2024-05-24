@@ -8,7 +8,7 @@ import {
     faRedditAlien, 
     faSquareInstagram,
     faYoutube,
-    faXTwitter
+    faXTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import Burger from "../Components/Shared/Burger";
 import ColorMode from "../Components/ColorMode";
@@ -31,14 +31,12 @@ function Main() {
         
         
         //ScrollLogo
-        document.addEventListener("scroll", (e) => {
-            const documentHeight = e.target.scrollingElement.clientHeight
+        document.addEventListener("scroll", () => {
             if(window.scrollY >= 200){
                 document.body.classList.add("scrolled")
             }else{
                 document.body.classList.remove("scrolled")
             }
-            
         })
     },[])
 
@@ -94,6 +92,8 @@ function Main() {
         },
 
     ]
+
+    
 
   
   return (

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Skills from "../Components/Skills"
 
 function index() {
   
@@ -27,7 +28,20 @@ function index() {
           </div>
         </div>
       </section>
-      <section id="about">
+      <section className="between-section" id="between1">
+        <div className="wrapper">
+            <header className="section-header">
+              <h2>
+                Skill<em>set</em>
+              </h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis numquam quibusdam quo sequi voluptas perferendis, perspiciatis aspernatur eos repudiandae nam.
+              </p>
+            </header>
+            <Skills />
+        </div>
+      </section> 
+      <section id="service">
         <div className="wrapper">
           <header className="section-header">
             <h2>
