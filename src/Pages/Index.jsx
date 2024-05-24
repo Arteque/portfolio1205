@@ -75,12 +75,26 @@ function index() {
               <h4>
                 Go Digital or Go Home!
               </h4>
-              <p>
-                Ich arbeite täglich mit einer Vielzahl von Kunden aus ganz Deutschland zusammen. 
-              </p>
-              <p>
-                  <b>Antworten</b>, <b>Erklärungen</b>, <b>Lösungen und kreative Ideen zu entwickeln</b>, ist meine Leidenschaft und gehört zu meinem Alltag. Den perfekten Ansatz zu finden, bedeutet, meine Kunden und ihre Bedürfnisse genau zu verstehen.
-              </p>
+              <h3>Kundenbetreuung und Lösungen</h3>
+              <p>Ich arbeite täglich mit einer Vielzahl von Kunden aus ganz Deutschland zusammen. Dabei stehen ihre individuellen Anforderungen und Wünsche im Mittelpunkt meiner Arbeit.</p>
+              
+              <h3>Leidenschaft für Lösungen</h3>
+              <p>Antworten, Erklärungen, Lösungen und kreative Ideen zu entwickeln, ist meine Leidenschaft und gehört zu meinem Alltag. Es ist ein spannender Prozess, der viel Einfühlungsvermögen und Kreativität erfordert.</p>
+              
+              <h3>Den perfekten Ansatz finden</h3>
+              <p>Den perfekten Ansatz zu finden, bedeutet, meine Kunden und ihre Bedürfnisse genau zu verstehen, um maßgeschneiderte Lösungen anbieten zu können. Jeder Kunde bringt seine eigenen Herausforderungen und Ziele mit, und es ist meine Aufgabe, diese zu erkennen und die bestmöglichen Strategien zu entwickeln. Dies kann nur durch eine enge Zusammenarbeit und eine offene Kommunikation erreicht werden.</p>
+              
+              <h3>Meine Vorgehensweise</h3>
+              <ul>
+                  <li>Intensive Gespräche führen</li>
+                  <li>Alle Aspekte und Erwartungen erfassen</li>
+                  <li>Flexibel und innovativ denken</li>
+                  <li>Standardisierte sowie kreative Lösungen anbieten</li>
+                  <li>Nachhaltige Mehrwerte schaffen</li>
+              </ul>
+              
+              <h3>Ziele</h3>
+              <p>Mein Ziel ist es, Mehrwert zu schaffen und die Kundenbeziehungen nachhaltig zu stärken, indem ich stets darauf achte, dass die entwickelten Lösungen nicht nur kurzfristig, sondern auch langfristig erfolgreich sind.</p>
             </div>
           </div>
           
@@ -140,10 +154,10 @@ function index() {
                   <img className="rotate" src="/General/outlineCircle.svg" alt="outlineCircle" />
                 </div>
                 <div className="tools-media rotate">
-                  <img className="right center" src="/Avatars/Designer/brush.svg" alt="Element3" />
-                  <img className="left center" src="/Avatars/Designer/colorBlue_1.svg" alt="Element3" />
-                  <img className="left top" src="/Avatars/Designer/piplette.svg" alt="Element3" />
-                  <img className="right bottom" src="/Avatars/Designer/colorplaett.svg" alt="Element3" />
+                  <img className="right center" style={{maxWidth:'80px', maxHeight:'200px'}} src="/Avatars/Entwickler/mouse.svg" alt="Element3" />
+                  <img className="left center" style={{maxWidth:'150px', maxHeight:'200px'}} src="/Avatars/Entwickler/keyboard.svg" alt="Element3" />
+                  <img className="left top" src="/Avatars/Entwickler/calendar.svg" alt="Element3" />
+                  <img className="right bottom" style={{maxWidth:'200px', maxHeight:'200px'}} src="/Avatars/Entwickler/screen.svg" alt="Element3" />
                 </div>
               </div>
             </div>
