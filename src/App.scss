@@ -420,7 +420,7 @@ $clrsLight:(
     }
   }
   section{
-    margin-block-end: 10rem;
+    margin-block-end: 5rem;
     header{
       &.section-header{
         h2{
@@ -531,10 +531,32 @@ $clrsLight:(
   max-width: 400px;
   .main-media{
     padding: 2rem;
+    position:relative;
+    width: fit-content;
     img{
-      animation:shakeit 20s ease-in-out infinite;
+      animation:shakeit 10s ease-in-out infinite;
+    }
+    &::after{
+      position: absolute;
+      content:"";
+      width: 100%;
+      left: 0;
+      height: 50px;
+      background-color: #00000015;
+      border-radius: 50%;
+      bottom: -50px;
+      filter: blur(5px);
     }
   }
+  .bg-media img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 2rem;
+    left: 0;
+    display: block;
+    opacity: 0.2;
+}
   .tools-media{
     position:absolute;
     inset: 3rem;
@@ -579,6 +601,9 @@ $clrsLight:(
 
 section{
   &:not(#hero){
+    header{
+      padding:5rem 2rem;
+    }
     .content{
       .col{
         height:fit-content;

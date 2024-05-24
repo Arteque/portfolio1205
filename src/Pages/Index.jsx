@@ -57,6 +57,9 @@ function index() {
                 <div className="main-media">
                   <img src="/Avatars/ErfinderAvatar.svg" alt="Erfinder Avatar" />
                 </div>
+                <div className="bg-media">
+                  <img className="rotate" src="/General/outlineCircle.svg" alt="outlineCircle" />
+                </div>
                 <div className="tools-media rotate">
                   <img className="right center" src="/Avatars/Erfinder/Element 3.svg" alt="Element3" />
                   <img className="left center" src="/Avatars/Erfinder/LaborFlasche1.svg" alt="Element3" />
