@@ -1,0 +1,23 @@
+@import "./_Vars";
+
+header{
+    &.section-header{
+      h2{
+        font-weight: 100;
+        font-size: clamp(32px, 10vw + 1px, 52px);
+        text-align: center;
+        color: var(--clr-text-200);
+        font-family:var(--heading-font);
+        em{
+          font-style: normal;
+          font-weight: 900;
+          color: var(--clr-call-100);
+        }
+      }
+      p{
+        max-width: 500px;
+        text-align:center;
+        margin-inline:auto;
+      }
+    }
+  }

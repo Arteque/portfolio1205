@@ -1,5 +1,9 @@
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import Skills from "../Components/Skills"
+import SectionHeader from "../Components/SectionHeader"
+import HeaderTitle from "../Components/Shared/HeaderTitle"
+import HeaderText from "../Components/Shared/HeaderText"
+import CallBtn from "../Components/Shared/CallBtn"
 
 function index() {
   
@@ -10,18 +14,17 @@ function index() {
           <div className="content">
             <h2>
               <span className="top">
-                Ahmed LEMSSIAH
+                ich bin
               </span>
               <span className="main">
                 Frontend<em>Web</em>Entwickler
               </span>
             </h2>
-            <p> Ich manipuliere Pixel, um Visionen zum Leben zu erwecken </p>
-            <div className="call">
-              <Link to="/portfolio">
-                Portfolio
-              </Link>
-            </div>
+            <p> &quot;Ich manipuliere Pixel, um Visionen zum Leben zu erwecken&quot; <br /> <small>Ahmed LEMSSIAH</small>
+            </p>
+            <CallBtn path="/portfolio">
+               Portfolio
+            </CallBtn>
           </div>
           <div className="media">
             <img src="/Avatars/AvatarMain.svg" alt="Frontend Web Entwickler Ahmed Lemssiah Avatar" />
@@ -30,28 +33,24 @@ function index() {
       </section>
       <section className="between-section" id="between1">
         <div className="wrapper">
-            <header className="section-header">
-              <h2>
+            <SectionHeader>
+              <HeaderTitle >
                 Skill<em>set</em>
-              </h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis numquam quibusdam quo sequi voluptas perferendis, perspiciatis aspernatur eos repudiandae nam.
-              </p>
-            </header>
+              </HeaderTitle>
+              <HeaderText>Hier eine Liste meinen täglichen Begleitern</HeaderText>
+            </SectionHeader>
             <Skills />
         </div>
       </section> 
       <section id="service">
         <div className="wrapper">
-          <header className="section-header">
-            <h2>
-              Über <em>mich</em>
-            </h2>
-            <p>
-            Ich bin und liebe es Webentwickler zusein. 
-            </p>
-          </header>
-          <div className="content">
+         <SectionHeader>
+              <HeaderTitle >
+                Meine <em>Leistungen</em>
+              </HeaderTitle>
+              <HeaderText><strong>Kreativität, Webdesign und Webentwicklung!</strong><br />Hier eine Beschreibung wie ich mit diesen Konzepten umgehe! </HeaderText>
+         </SectionHeader>
+         <div className="content">
             <div className="col">
               <div className="multi-media-container ">
                 <div className="main-media">

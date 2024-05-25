@@ -1,0 +1,46 @@
+@import "./Vars";
+
+.call{
+    position:relative;
+    a{
+      display: block;
+      width: fit-content;
+      padding: 1rem 1rem 1rem 0rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin-inline:auto;
+      position:relative;
+      &::after{
+        content:"";
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1.4rem;
+        background-image: url("/General/UnderLine.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+    @include tablet{
+        a{
+            
+            font-size: 1.35rem;
+            &::after {
+                bottom: -7px;
+                height: 2rem;
+                transition: all 0.3s;
+            }
+            &:hover{
+            &::after{
+                filter:brightness(1.5);
+            }
+            }
+        }
+    }
+    @include desktop{
+        a{
+            margin-inline:unset;
+        }
+    }
+  }
