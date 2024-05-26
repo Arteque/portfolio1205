@@ -20,7 +20,7 @@ function index() {
                 Frontend<em>Web</em>Entwickler
               </span>
             </h2>
-            <p> &quot;Ich manipuliere Pixel, um Visionen zum Leben zu erwecken&quot; <br /> <small>Ahmed LEMSSIAH</small>
+            <p>&quot;Ich manipuliere Pixel, um Visionen zum Leben zu erwecken&quot; <br /> <strong>Ahmed LEMSSIAH</strong>
             </p>
             <CallBtn path="/portfolio">
                Portfolio
