@@ -13,10 +13,13 @@
         --clr-#{$clr}-#{$subClr}: #{$vl};
       }
     }
-    --text-font:"Switzer", sans-serif;
+    // --text-font:"Switzer", sans-serif;
     // --text-font:"Chivo Mono", monospace;
+    --text-font:"balto", sans-serif;
     // --heading-font: "Switzer", sans-serif;
-    --heading-font: "Rubik Mono One", monospace;;
+    // --heading-font: "Rubik Mono One", monospace;;
+    --heading-font: "balto", sans-serif;
+
     --p:2rem;
     --shadow:2px 2px 2px  #00000040;
   }
