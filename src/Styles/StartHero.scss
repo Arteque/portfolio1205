@@ -13,8 +13,22 @@
     .content{
       text-align:center;
       h2{
+        .top{
+          font-weight: 400;
+          font-size: 1rem;
+          font-family: var(--text-font);
+        }
         .main{
           display:block;
+          font-size:clamp(1rem, 8vw + 1px, 3rem);
+          text-transform: uppercase;
+          // font-weight:normal;
+          em{
+            font-size: clamp(1.5rem, 10vw + 1px, 4rem);
+            scale:  1.1;
+            font-weight: 900;
+            rotate: 15deg;
+          }
         }
       }
     }

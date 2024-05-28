@@ -13,7 +13,7 @@ function StartHero() {
                 Frontend<em>Web</em>Entwickler
               </span>
             </h2>
-            <p>&quot;Ich manipuliere Pixel, um Visionen zum Leben zu erwecken&quot; <br /> <strong>Ahmed LEMSSIAH</strong>
+            <p>Ich manipuliere Pixel, um Visionen zum Leben zu erwecken
             </p>
             <CallBtn path="/portfolio">
                Portfolio

@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/sbv7jca.css");
 //Colors
+
 $clrs:(
   text:(
    100:hsl(0, 0%, 91%),
@@ -35,6 +36,9 @@ $clrsLight:(
     300:hsl(138, 90%, 65%)
   )
 );
+
+
+
 //Mixin
 @mixin tablet{
   @media screen and (min-width:700px){@content;}
