@@ -1,4 +1,4 @@
-@import "/Fonts/switzer-webfont/style.css";
+@import url("https://use.typekit.net/sbv7jca.css");
 //Colors
 $clrs:(
   text:(
@@ -52,3 +52,65 @@ $clrsLight:(
   @media screen and (min-width:1980px){@content;}
 };
 
+:root {
+
+  @each $clr, $vls in $clrs{
+    @each $subClr, $vl in $vls{
+      --clr-#{$clr}-#{$subClr}: #{$vl};
+    }
+  }
+  --text-font:"balto", sans-serif;
+  --heading-font: "calcite-pro", sans-serif;
+
+  --p:2rem;
+  --shadow:2px 2px 2px  #00000040;
+}
+
+
+html, body{
+  background-color: var(--clr-bg-100);
+  color: var(--clr-text-100);
+  font-family: var(--text-font);
+  min-height: 80svh;
+}
+
+body[data-colormode="light"]{
+  @each $clr, $vls in $clrsLight{
+    @each $subClr, $vl in $vls{
+      --clr-#{$clr}-#{$subClr}: #{$vl};
+    }
+  }
+}
+
+
+
+body[data-colormode="dark"]{
+  @each $clr, $vls in $clrs{
+    @each $subClr, $vl in $vls{
+      --clr-#{$clr}-#{$subClr}: #{$vl};
+    }
+  }
+ .logo-container{
+  img{
+    filter: brightness(1) !important;
+  }
+ }
+}
+body[data-colormode="light"] .logo-container img{
+  filter: brightness(100);
+}
+
+@media (prefers-color-scheme: light) {
+  :root{
+    @each $clr, $vls in $clrsLight{
+      @each $subClr, $vl in $vls{
+        --clr-#{$clr}-#{$subClr}: #{$vl};
+      }
+    }
+  }
+  .logo-container {
+    img{
+      filter: brightness(100);
+    }
+  }
+}

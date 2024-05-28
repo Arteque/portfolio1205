@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
+import './Styles/_Vars.scss'
 import './App.scss'
 
 

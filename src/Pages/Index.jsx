@@ -3,34 +3,13 @@ import Skills from "../Components/Skills"
 import SectionHeader from "../Components/SectionHeader"
 import HeaderTitle from "../Components/Shared/HeaderTitle"
 import HeaderText from "../Components/Shared/HeaderText"
-import CallBtn from "../Components/Shared/CallBtn"
+import StartHero from "../Components/StartHero"
 
 function index() {
   
   return (
     <>
-      <section id="hero">
-        <div className="wrapper">
-          <div className="content">
-            <h2>
-              <span className="top">
-                ich bin
-              </span>
-              <span className="main">
-                Frontend<em>Web</em>Entwickler
-              </span>
-            </h2>
-            <p>&quot;Ich manipuliere Pixel, um Visionen zum Leben zu erwecken&quot; <br /> <strong>Ahmed LEMSSIAH</strong>
-            </p>
-            <CallBtn path="/portfolio">
-               Portfolio
-            </CallBtn>
-          </div>
-          <div className="media">
-            <img src="/Avatars/AvatarMain.svg" alt="Frontend Web Entwickler Ahmed Lemssiah Avatar" />
-          </div>
-        </div>
-      </section>
+      <StartHero />
       <section className="between-section" id="between1">
         <div className="wrapper">
             <SectionHeader>
