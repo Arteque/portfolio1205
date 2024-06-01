@@ -101,7 +101,7 @@ function Main() {
     <header id="main-header">
         <div className="wrapper">
             <div className="top-header">
-            <ColorMode />
+            {/* <ColorMode /> */}
             {
             socialData && (
                 <ul className="extern-links">
