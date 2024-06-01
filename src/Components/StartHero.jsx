@@ -1,4 +1,5 @@
 import "../Styles/StartHero.scss"
+import AvatarMain from "./AvatarMain"
 import CallBtn from "./Shared/CallBtn"
 function StartHero() {
   return (
@@ -20,7 +21,8 @@ function StartHero() {
             </CallBtn>
           </div>
           <div className="media">
-            <img src="/Avatars/AvatarMain.svg" alt="Frontend Web Entwickler Ahmed Lemssiah Avatar" />
+            {/* <img src="/Avatars/AvatarMain.svg" alt="Frontend Web Entwickler Ahmed Lemssiah Avatar" /> */}
+            <AvatarMain />
           </div>
         </div>
     </section>
