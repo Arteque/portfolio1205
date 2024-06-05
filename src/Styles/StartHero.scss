@@ -10,23 +10,31 @@
       justify-content: flex-end;
       min-height: 90svh;
       position: relative;
+      background:linear-gradient(to bottom, hsl(194, 100%, 50%) 0, rgb(190, 237, 255) 50%);
       &::before{
         content:"";
         position: absolute;
         z-index: 5;
         inset: 0;
-        backdrop-filter: blur(2px) brightness(1.5) grayscale(0.5);
+        backdrop-filter: blur(5px);
       }
       &::after{
         content:"";
         position:absolute;
         inset:0;
         height: 100%;
-        background-image:url('/General/Backgrounds/startherobg.jpeg');
+        background-image:url('/General/Backgrounds/customBG.png');
         background-size: cover;
         background-position:center;
         z-index: 0;
         background-repeat: no-repeat  ;
+        background-blend-mode: multiply;
+      }
+      #start-hero-canvas{
+        position:absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
       }
     }
     .content{
@@ -75,19 +83,15 @@
           content:"";
           position:absolute;
           inset:0;
-          background-image:url('/General/Backgrounds/startherobg.jpeg');
           background-size: cover;
           background-position:center;
           z-index: 0;
-          // opacity: 0.6;
-          // filter: blur(1px) brightness(2);
           background-repeat: no-repeat  ;
         }
       }
       .content{
         transform:translateY(10svh);
         text-align:left;
-        // z-index: 1;
         background-color: var(--clr-bg-100);
         padding: 1rem;
         border-radius: 10px;
@@ -96,7 +100,6 @@
           width: fit-content;
           max-width: unset;
           margin-inline: unset;
-          // z-index: 2;
           img{
             width:auto;
           }
