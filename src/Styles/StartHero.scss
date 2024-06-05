@@ -9,9 +9,29 @@
       flex-direction: column;
       justify-content: flex-end;
       min-height: 90svh;
+      position: relative;
+      &::before{
+        content:"";
+        position: absolute;
+        z-index: 5;
+        inset: 0;
+        backdrop-filter: blur(2px) brightness(1.5) grayscale(0.5);
+      }
+      &::after{
+        content:"";
+        position:absolute;
+        inset:0;
+        height: 100%;
+        background-image:url('/General/Backgrounds/startherobg.jpeg');
+        background-size: cover;
+        background-position:center;
+        z-index: 0;
+        background-repeat: no-repeat  ;
+      }
     }
     .content{
       text-align:center;
+      z-index: 10;
       h2{
         .top{
           font-weight: 400;
@@ -36,6 +56,7 @@
       width: 80%;
       max-width:400px;
       margin-inline: auto;
+      z-index: 10;
     }
     
   }
@@ -48,10 +69,37 @@
         align-items: center;
         gap: 1rem;
         justify-content: center;
+        min-height:unset;
+        position: relative;
+        &::after{
+          content:"";
+          position:absolute;
+          inset:0;
+          background-image:url('/General/Backgrounds/startherobg.jpeg');
+          background-size: cover;
+          background-position:center;
+          z-index: 0;
+          // opacity: 0.6;
+          // filter: blur(1px) brightness(2);
+          background-repeat: no-repeat  ;
+        }
+      }
+      .content{
+        transform:translateY(10svh);
+        text-align:left;
+        // z-index: 1;
+        background-color: var(--clr-bg-100);
+        padding: 1rem;
+        border-radius: 10px;
       }
       .media {
-          width: 60%;
-          max-width: 700px;
+          width: fit-content;
+          max-width: unset;
+          margin-inline: unset;
+          // z-index: 2;
+          img{
+            width:auto;
+          }
       }
     }
   }

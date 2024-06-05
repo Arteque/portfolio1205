@@ -91,6 +91,9 @@
     padding-inline: var(--p);
     max-width:1350px;
     margin-inline:auto;
+    @include extralarge{
+      max-width: 90%;
+    }
   }
   .burger-menu{
     display:flex;
@@ -484,7 +487,7 @@ section{
   header{
     &#main-header{
       .wrapper{
-        padding-inline:2rem;
+        // padding-inline:2rem;
         .top-header{
           padding-inline:unset;
           .extern-links{
@@ -571,4 +574,5 @@ section{
   }
 
 }
+
 
