@@ -1,4 +1,6 @@
 @import "./_Vars";
+
+/*
 .skills{
     display: flex;
     flex-flow: row wrap;
@@ -39,4 +41,10 @@
         font-size: 3rem;
         transition: all 0.1s;
     }
+}
+*/
+
+section.between-section{
+    margin: 0;
+    padding: 0;
 }

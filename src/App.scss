@@ -332,9 +332,8 @@
 
 
  
-  section{
+  section:not(#hero){
     margin-block-end: 5rem;
-    
   }
   
 
