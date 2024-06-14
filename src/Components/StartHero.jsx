@@ -14,16 +14,17 @@ function StartHero() {
           <div className="content">
             <h2>
               <span className="top">
-                ich bin
+                ich heiße Ahmed Lemssiah
               </span>
               <span className="main">
-                Frontend<em>Web</em>Entwickler
+                ich designe und entwickle Websites
               </span>
             </h2>
-            <p>Ich manipuliere Pixel, um Visionen zum Leben zu erwecken
-            </p>
             <CallBtn path="/portfolio">
                Portfolio
+            </CallBtn>
+            <CallBtn path="/kontakt">
+               Kontakt
             </CallBtn>
           </div>
           <div className="media">
