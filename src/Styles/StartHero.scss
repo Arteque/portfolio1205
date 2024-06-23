@@ -28,7 +28,10 @@
         background-position:center;
         z-index: 0;
         background-repeat: no-repeat  ;
-        background-blend-mode: multiply;
+        // opacity: 0.5;
+        filter: blur(5px);
+        // background-blend-mode: multiply;
+
       }
       #start-hero-canvas{
         position:absolute;
