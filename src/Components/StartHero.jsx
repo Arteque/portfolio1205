@@ -17,14 +17,11 @@ function StartHero() {
                 ich heiße Ahmed Lemssiah
               </span>
               <span className="main">
-                ich designe und entwickle Websites
+               Frontend<em>Web</em>entwickler
               </span>
             </h2>
             <CallBtn path="/portfolio">
                Portfolio
-            </CallBtn>
-            <CallBtn path="/kontakt">
-               Kontakt
             </CallBtn>
           </div>
           <div className="media">
