@@ -6,7 +6,7 @@
       display: block;
       width: fit-content;
       padding: 1rem 1rem 1rem 0rem;
-      font-size: 1rem;
+      font-size: 2rem;
       text-transform: uppercase;
       margin-inline:auto;
       position:relative;
@@ -29,7 +29,7 @@
     @include tablet{
         a{
             
-            font-size: 1.35rem;
+            font-size: 2.35rem;
             &::after {
                 bottom: -7px;
                 height: 2rem;

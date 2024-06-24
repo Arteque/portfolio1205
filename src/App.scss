@@ -127,7 +127,7 @@
     &#main-header{
       z-index: 999;
       position:sticky;
-      top: -35px;
+      top: -40px;
     }
   }
   header#main-header {
@@ -136,7 +136,7 @@
       .top-header{
         padding-inline:var(--p);
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         // margin-block: 0.5rem;
         .extern-links{
@@ -501,7 +501,7 @@ section{
           }
         }
         nav{
-          border-radius: 1rem;
+          border-radius: 1rem 1rem 0 0;
           box-shadow: var(--shadow);
           padding:unset;
           padding-inline-start: 1rem;

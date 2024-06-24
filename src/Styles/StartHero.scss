@@ -10,8 +10,11 @@
       justify-content: flex-end;
       min-height: 90svh;
       position: relative;
-     background:linear-gradient(to bottom, #dadada 60%, hsl(194, 100%, 80%) 30%, rgb(3, 179, 248) 50%);
-    //  background: #394c58;
+      background:linear-gradient(to bottom, #dadada 60%, hsl(194, 100%, 80%) 30%, rgb(3, 179, 248) 50%);
+      //  background: #394c58;
+      @include tablet{
+        background:linear-gradient(to bottom, hsl(194, 100%, 80%) 0%, rgb(3, 179, 248) 50%);
+    }
       &::before{
         content:"";
         position: absolute;
@@ -48,23 +51,30 @@
       h2{
         .top{
           font-weight: 400;
-          font-size: 1rem;
           font-family: var(--text-font);
+          margin-block-end: 1rem;
+          display: block;
+          text-transform: uppercase;
+          font-size: 1rem;
         }
         .main{
           display:block;
-          font-size:clamp(1.2rem, 10vw + 1px, 80rem);
+          font-size:4rem;
           text-transform: uppercase;
           font-weight:normal;
-          line-height: 2.5rem;
           em{
-            font-size: clamp(1.5rem, 20vw + 1px, 80px);
+            font-size: clamp(1.5rem, 10vw + 1px, 50px);
             scale:  1.1;
             font-weight: 900;
             rotate: 15deg;
-            line-height: 65px;
-            display: block;
             text-shadow: 2px 5px 20px #00000090;
+            display: block;
+            scale: 2;
+            @include tablet{
+              display: inline-block;
+              scale: 1.5;
+              mix-blend-mode: multiply;
+            }
           }
         }
       }
