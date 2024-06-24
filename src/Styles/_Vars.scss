@@ -1,34 +1,17 @@
 @import url("https://use.typekit.net/sbv7jca.css");
 //Colors
 
+
 $clrs:(
   text:(
-   100:hsl(0, 0%, 91%),
-   200:hsl(0, 0%, 81%),
-   300:hsl(0, 0%, 71%),
-  ),
-  bg:(
-    100:hsl(216, 72%, 17%),
-    200:hsl(216, 72%, 27%),
-    300:hsl(216, 72%, 37%),
-  ),
-  call:(
-    100:hsl(138, 90%, 45%),
-    200:hsl(138, 90%, 55%),
-    300:hsl(138, 90%, 65%)
-  )
-);
-
-$clrsLight:(
-  text:(
     100:hsl(216, 72%, 17%),
     200:hsl(216, 72%, 27%),
     300:hsl(216, 72%, 37%),
   ),
   bg:(
-    100:hsl(0, 0%, 91%),
-    200:hsl(0, 0%, 81%),
-    300:hsl(0, 0%, 71%),
+    100:hsl(30, 91%, 96%),
+    200:hsl(30, 91%, 86%),
+    300:hsl(30, 91%, 76%)
   ),
   call:(
     100:hsl(138, 90%, 45%),
@@ -78,43 +61,5 @@ html, body{
   min-height: 80svh;
 }
 
-body[data-colormode="light"]{
-  @each $clr, $vls in $clrsLight{
-    @each $subClr, $vl in $vls{
-      --clr-#{$clr}-#{$subClr}: #{$vl};
-    }
-  }
-}
 
 
-
-body[data-colormode="dark"]{
-  @each $clr, $vls in $clrs{
-    @each $subClr, $vl in $vls{
-      --clr-#{$clr}-#{$subClr}: #{$vl};
-    }
-  }
- .logo-container{
-  img{
-    filter: brightness(1) !important;
-  }
- }
-}
-body[data-colormode="light"] .logo-container img{
-  filter: brightness(100);
-}
-
-@media (prefers-color-scheme: light) {
-  :root{
-    @each $clr, $vls in $clrsLight{
-      @each $subClr, $vl in $vls{
-        --clr-#{$clr}-#{$subClr}: #{$vl};
-      }
-    }
-  }
-  .logo-container {
-    img{
-      filter: brightness(100);
-    }
-  }
-}

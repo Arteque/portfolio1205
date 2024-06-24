@@ -46,8 +46,11 @@
     }
     .content{
       text-align:center;
-      // justify-content: center;
       z-index: 10;
+      transform:translateY(8svh);
+      @include tablet{
+        transform: unset;
+      }
       h2{
         .top{
           font-weight: 400;

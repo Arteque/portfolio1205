@@ -11,7 +11,6 @@ import {
     faXTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import Burger from "../Components/Shared/Burger";
-import ColorMode from "../Components/ColorMode";
 function Main() {
 
 
@@ -101,7 +100,6 @@ function Main() {
     <header id="main-header">
         <div className="wrapper">
             <div className="top-header">
-            {/* <ColorMode /> */}
             {
             socialData && (
                 <ul className="extern-links">
@@ -121,7 +119,6 @@ function Main() {
             }
             </div>
         <nav>
-            
             <div className="logo-container">
                 <Link to="/">
                     <img src={MainLogo} alt="Frontend Web Entwickler LEMSSIAH Ahmed" />
