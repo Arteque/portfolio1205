@@ -14,7 +14,7 @@ function StartHero() {
           <div className="content">
             <h2>
               <span className="top">
-                ich heiße Ahmed Lemssiah
+                Hallo! Ich heiße Ahmed Lemssiah, und ich bin
               </span>
               <span className="main">
                Frontend<em>Web</em>entwickler
