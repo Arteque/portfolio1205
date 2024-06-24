@@ -65,6 +65,7 @@
           font-size:4rem;
           text-transform: uppercase;
           font-weight:normal;
+          overflow: hidden;
           em{
             font-size: clamp(1.5rem, 10vw + 1px, 50px);
             scale:  1.1;

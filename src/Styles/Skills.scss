@@ -1,50 +1,26 @@
 @import "./_Vars";
-
-/*
-.skills{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    background: url(/General/onelineWave.svg) no-repeat center / contain;
-    li{
-        transition: all 0.3s;
-        border-radius: 10px;
-        box-shadow: 2px 2px 0px transparent;
-        &:hover{
-            box-shadow: 2px 2px 20px #00000050;
-        }
-        a{
-            border-radius:10px;
-            width: 80px;
-            height: 80px;
-            display:flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s;
-            &:hover{
-                svg{
-                    color: var(--clr-bg-100);
-                    
-                }
-            }
-        }
-        @include tablet{
-            &:nth-of-type(even){
-                position:relative;
-                transform:translateY(-50px);
-            }
-        }
-    }
-    svg{
-        font-size: 3rem;
-        transition: all 0.1s;
-    }
-}
-*/
-
 section.between-section{
     margin: 0;
     padding: 0;
+    .skills{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        gap: 2rem;
+        li{
+            a{
+                display: block;
+                width: 80px;
+                aspect-ratio: 1;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--clr-bg-100);
+                svg{
+                    height: 50px !important;
+                }
+            }
+        }
+    }
 }

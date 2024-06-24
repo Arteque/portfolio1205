@@ -71,7 +71,6 @@
           font-variant: normal;
           text-transform: uppercase;
           font-weight: 900;
-          
         }
       }
     }
@@ -366,9 +365,7 @@
 
 section{
   &:not(#hero){
-    header{
-      padding:5rem 2rem;
-    }
+    
     .content{
       .col{
         height:fit-content;
