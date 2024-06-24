@@ -47,7 +47,7 @@
     .content{
       text-align:center;
       z-index: 10;
-      transform:translateY(8svh);
+      transform:translateY(6svh);
       @include tablet{
         transform: unset;
       }
@@ -57,15 +57,22 @@
           font-family: var(--text-font);
           margin-block-end: 1rem;
           display: block;
-          // text-transform: uppercase;
-          font-size: 1.2rem;
+          font-size: 0.9rem;
+          @include tablet{
+           font-size: 1.2rem;
+          }
         }
         .main{
           display:block;
-          font-size:4rem;
           text-transform: uppercase;
           font-weight:normal;
           overflow: hidden;
+          font-size:3rem;
+          font-weight: 900;
+          @include tablet{
+            font-size:4rem;
+            font-weight: normal;
+          }
           em{
             font-size: clamp(1.5rem, 10vw + 1px, 50px);
             scale:  1.1;
